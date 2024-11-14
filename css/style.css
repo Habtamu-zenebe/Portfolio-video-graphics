@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #183059;
+  color: #f6f4f3;
+  margin: auto;
+  width: 90vw;
+  font-family: Inter;
+}
+/*
+main color:#183059 
+secondary color:#276FBF
+text color:#F6F4F3
+link color: #1effd9
+ */
+/* ================================ */
+/* General style */
+/* =============================== */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.home-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.skil-section {
+  border: 2px solid aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.certeficate-section {
+  border: 2px solid aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.work-section {
+  border: 2px solid aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.contactMe-section {
+  border: 2px solid aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================================ */
+/* Inside sections styles */
+/* =============================== */
+.habtamu {
+  color: aqua;
+}
+a {
+  color: #1effd9;
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.home-text {
+  /* border: 2px solid red; */
+  padding-top: 24px;
+  margin-top: 164px;
+  width: 60%;
+}
+#typing-animation {
+  padding-left: 86px;
+  font-size: 32px;
+  font-weight: 500;
+  color: aqua;
+  white-space: nowrap;
+  overflow: hidden; /* Ensures the text is clipped */
+  border-right: 2px solid; /* Creates a cursor effect */
+  width: 0; /* Start with no width */
+  height: 40px; /* Set a fixed height for the animation */
+  line-height: 40px; /* Vertically center the text */
+
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+.home-text p {
+  margin-top: 24px;
+  padding-left: 64px;
+  padding-right: 16px;
+  font-size: 16px;
+}
+.home-text p b {
+  color: aqua;
+}
+.home-image {
+  padding-top: 24px;
+  padding-left: 24px;
+  margin-top: 48px;
+  width: 40%;
+}
+.home-image img {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-icons {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 16px;
+}
