@@ -31,6 +31,8 @@ function typeText(text) {
 
 typeText(text); // Start typing
 
+
+
 // Smoth Scrolling
 // document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 //   anchor.addEventListener("click", function (e) {
