@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="habtamu">Habtamu Zenebe</h1>
+    <!-- <header>
+      <h1>Habtamu Zenebe</h1>
       <nav class="nav-bar">
         <a href="#home-section"> Home</a>
         <a href="#about-section">About Me</a>
@@ -27,69 +27,86 @@
         <a href="#work-section">Project</a>
         <a href="#contactMe-section">Contact Me</a>
       </nav>
+    </header> -->
+    <header>
+      <h1>Habtamu Zenebe</h1>
+      <nav class="nav-bar" id="nav-bar">
+        <a href="#home-section">Home</a>
+        <a href="#about-section">About Me</a>
+        <a href="#skill-section">Skill</a>
+        <a href="#certeficate-section">Certeficate</a>
+        <a href="#work-section">Project</a>
+        <a href="#contactMe-section">Contact Me</a>
+      </nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
+
     <main>
       <!-- ========================================== -->
       <!-- home section -->
       <!-- ========================================= -->
 
       <section class="section home-section" id="home-section">
-        <div class="home-text">
-          <div id="typing-animation"></div>
-          <p>
-            I am a skilled <b>Video Editor</b> and
-            <b>Graphic Designer</b> committed to transforming ideas into
-            visually captivating and impactful stories. With attention to detail
-            and a deep understanding of design principles, I create engaging
-            content that connects with audiences ...<a
-              href="#about-section"
-              class="read-more"
-              >read more</a
-            >
-          </p>
-          <div class="btn-container">
-            <a href="https://t.me/Hamizh21 " target="_blank" class="btn btn1"
-              >let's talk</a
-            >
+        <div class="home-container">
+          <div class="home-text">
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+            <p>
+              I am a skilled <b>Video Editor</b> and
+              <b>Graphic Designer</b> committed to transforming ideas into
+              visually captivating and impactful stories. With attention to
+              detail and a deep understanding of design principles, I create
+              engaging content that connects with audiences ...<a
+                href="#about-section"
+                class="read-more"
+                >read more</a
+              >
+            </p>
+            <div class="btn-container">
+              <a href="https://t.me/Hamizh21 " target="_blank" class="btn btn1"
+                >let's talk</a
+              >
+              <a
+                href="https://www.linkedin.com/in/habtamu-zenebe-8b435a310/"
+                target="_blank"
+                class="btn btn2"
+                >Hire Me</a
+              >
+            </div>
+          </div>
+          <div class="home-image">
+            <img src="images/img.jpg" alt="myPhoto" />
+          </div>
+          <div class="social-icons">
             <a
               href="https://www.linkedin.com/in/habtamu-zenebe-8b435a310/"
               target="_blank"
-              class="btn btn2"
-              >Hire Me</a
             >
-          </div>
-        </div>
-        <div class="home-image">
-          <img src="images/img.jpg" alt="myPhoto" />
-        </div>
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/habtamu-zenebe-8b435a310/"
-            target="_blank"
-          >
-            <img src="images/linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="mailto:habtamuzenebe42@gmail.com" target="_blank">
-            <img src="images/email_14410.png" alt="Email" />
-          </a>
-          <a href="https://t.me/Hamizh21" target="_blank">
-            <img
-              src="images/telegram_icon-icons.com_72055.png"
-              alt="Telegram"
-            />
-          </a>
-          <a href="https://x.com/HabtamuZ21" target="_blank">
-            <img src="images/twitter.png" alt="Twitter" />
-          </a>
-          <a href="https://www.instagram.com/habtamu_2127/" target="_blank">
-            <img src="images/instagram.png" alt="Instagram" />
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:habtamuzenebe42@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://t.me/Hamizh21" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://x.com/HabtamuZ21" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/habtamu_2127/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
             <a
               href="https://web.facebook.com/profile.php?id=100091064822677"
               target="_blank"
             >
-              <img src="images/facebook.png" target="_blank" alt="Facebook" />
+              <i class="fab fa-facebook"></i>
             </a>
-          </a>
+          </div>
         </div>
       </section>
 
@@ -212,43 +229,47 @@
 
       <section class="section certeficate-section" id="certeficate-section">
         <div class="certeficate-container">
-          <h2>Certeficate</h2>
-          <div class="flex">
+          <h2>Certificate</h2>
+          <div class="carousel-wrapper">
             <img
               src="images/2x_left-move.png"
-              class="icon"
+              class="icon left-icon"
               alt="move left icon"
+              onclick="moveCarousel(-1)"
             />
-            <div class="img-box">
-              <img
-                src="images/Udemy graphic design certeficate.png"
-                class="certeficate"
-                alt="Udemy graphic design certeficate"
-              />
-            </div>
-            <div class="img-box">
-              <img
-                src="images/Certeficate Editing.png"
-                class="certeficate"
-                alt=" Mind luster Editing Certeficate"
-              />
-            </div>
-            <div class="img-box">
-              <img
-                src="images/Udemy graphic design certeficate.png"
-                class="certeficate"
-                alt="Udemy graphic design certeficate"
-              />
+            <div class="carousel">
+              <div class="img-box">
+                <img
+                  src="images/Udemy graphic design certeficate.png"
+                  class="certeficate"
+                  alt="Udemy graphic design certificate"
+                />
+              </div>
+              <div class="img-box">
+                <img
+                  src="images/Certeficate Editing.png"
+                  class="certeficate"
+                  alt="Mind Luster Editing Certificate"
+                />
+              </div>
+              <div class="img-box">
+                <img
+                  src="images/Udemy graphic design certeficate.png"
+                  class="certeficate"
+                  alt="Udemy graphic design certificate"
+                />
+              </div>
             </div>
             <img
               src="images/2x_right-move.png"
-              class="icon"
+              class="icon right-icon"
               alt="move right icon"
+              onclick="moveCarousel(1)"
             />
           </div>
         </div>
       </section>
-
+      
       <!-- ========================================== -->
       <!-- work section -->
       <!-- ========================================= -->
@@ -382,59 +403,124 @@
       <section class="section contact-me" id="contactMe-section">
         <div class="contact-container">
           <h2>Contact Me</h2>
-          <p>Have a question or want to work together? Reach out!</p>
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <p>
+            If you have any questions, feel free to reach out. I'll get back to
+            you as soon as possible!
+          </p>
+          <form>
             <div class="form-group">
-              <label for="name">Name</label>
+              <label for="name">Your Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Enter your name"
                 required
               />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email">Your Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Enter your email"
                 required
               />
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message">Your Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Your Message"
+                placeholder="Type your message here..."
                 required
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="submit-btn">Send Message</button>
           </form>
-          <div class="social-links">
-            <a href="mailto:yourname@example.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+        </div>
+      </section>
+    </main>
+    <!-- ========================================== -->
+    <!-- foooter -->
+    <!-- ========================================= -->
+    <footer class="portfolio-footer">
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-about">
+          <h3>About Me</h3>
+          <p>
+            I'm a passionate web developer and designer dedicated to creating
+            intuitive and engaging digital experiences.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:habtamuzenebe42@gmial.com" target="_blank">
+                habtamuzenebe42@gmial.com</a
+              >
+            </li>
+            <li>Phone: <a href="tel:+251952530720">+251952530720</a></li>
+            <li>Location: Welkite, Ethiopia</li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+          <div class="footer-social-icons">
+            <a
+              href="https://www.linkedin.com/in/habtamu-zenebe-8b435a310/"
+              target="_blank"
+              aria-label="LinkedIn"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/yourgithub" target="_blank"
+            <a
+              href="https://github.com/Habtamu-zenebe"
+              target="_blank"
+              aria-label="GitHub"
               ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://x.com/HabtamuZ21"
+              target="_blank"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/habtamu_2127/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
             ></a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ========================================== -->
-      <!-- foooter -->
-      <!-- ========================================= -->
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Habtamu Zenebe. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-      <script src="Js/script.js"></script>
-    </main>
+    <script src="Js/script.js"></script>
   </body>
 </html>
